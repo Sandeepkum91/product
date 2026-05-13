@@ -107,7 +107,7 @@ export default function Testimonials() {
                 </div>
                 
                 <p className="text-brand-text/80 text-lg md:text-2xl font-medium leading-relaxed mb-8 md:mb-10 group-hover:text-brand-text transition-colors">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
 
                 

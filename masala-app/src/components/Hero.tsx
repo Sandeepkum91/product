@@ -4,7 +4,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 
+const particles = Array.from({ length: 20 }, () => ({
+  initialX: Math.random() * 100 + "%",
+  initialY: Math.random() * 100 + "%",
+  duration: 5 + Math.random() * 5,
+  delay: Math.random() * 5,
+}));
+
 export default function Hero() {
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Cinematic Elements */}
@@ -13,22 +21,22 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[#0f0b08]/60 backdrop-blur-[2px]" />
         
         {/* Animated Particles */}
-        {[...Array(20)].map((_, i) => (
+        {particles.map((particle, i) => (
           <motion.div
             key={i}
             initial={{ 
               opacity: 0, 
-              x: Math.random() * 100 + "%", 
-              y: Math.random() * 100 + "%" 
+              x: particle.initialX, 
+              y: particle.initialY 
             }}
             animate={{ 
               opacity: [0, 0.3, 0],
               y: [null, "-10%"],
               transition: {
-                duration: 5 + Math.random() * 5,
+                duration: particle.duration,
                 repeat: Infinity,
                 ease: "linear",
-                delay: Math.random() * 5
+                delay: particle.delay,
               }
             }}
             className="absolute w-1 h-1 bg-brand-primary rounded-full blur-[1px]"

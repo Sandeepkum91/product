@@ -47,7 +47,7 @@ export default function CTA() {
 
             
             <p className="text-brand-text/60 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-              Whether you're a home chef, restaurant owner, or global distributor, 
+              Whether you&apos;re a home chef, restaurant owner, or global distributor, 
               we have the perfect spice solutions for your needs.
             </p>
 

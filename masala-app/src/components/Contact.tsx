@@ -20,7 +20,7 @@ export default function Contact() {
               Get In Touch
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-text mt-4 mb-8">
-              Let's Start a <br /> <span className="text-brand-primary">Flavorful</span> Partnership.
+              Let&apos;s Start a <br /> <span className="text-brand-primary">Flavorful</span> Partnership.
             </h2>
             
             <div className="space-y-8 mt-12">
