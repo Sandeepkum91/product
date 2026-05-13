@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0f0b08;
+  --color-brand-primary: #d97706;
+  --color-brand-secondary: #7f1d1d;
+  --color-brand-highlight: #f8f1e7;
+  --color-brand-text: #fff7ed;
+  --color-brand-card: #1b130d;
+  --color-brand-border: #3b2b1c;
+  --color-brand-gold: #eab308;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
+}
+
+:root {
+  --background: #0f0b08;
+  --foreground: #fff7ed;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.glass {
+  background: rgba(27, 19, 13, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 43, 28, 0.5);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, #eab308, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0b08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b2b1c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+

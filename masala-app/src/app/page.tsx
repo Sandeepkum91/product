@@ -1,0 +1,29 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Products from "@/components/Products";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import SpiceShowcase from "@/components/SpiceShowcase";
+import Quality from "@/components/Quality";
+import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <main className="relative">
+      <Navbar />
+      <Hero />
+      <About />
+      <Products />
+      <WhyChooseUs />
+      <SpiceShowcase />
+      <Quality />
+      <Testimonials />
+      <CTA />
+      <Contact />
+      <Footer />
+    </main>
+  );
+}
